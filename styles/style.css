@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* box-sizing reset */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* end box-sizing reset */
+
+
+/* Hide label */
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    border: 0;
+    white-space: nowrap;
+}
+
+body{
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    color: white;
+    text-align: center;
+    background-color: #1F2937;;
+}
+
+/* === Header Section === */
+header {
+    background-color: #6943FF;
+}
+
+.header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.header-container h1{
+    margin: 2rem 0 0 0;
+    font-weight: 900;
+    /* letter-spacing: 0.20rem; */
+}
+
+.input-number{
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #6943FF;
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: white;
+    width: 150px;
+    height: 83px;
+    border: 2px solid #B295FF;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    margin: 1.8rem 0 1.5rem 0;
+    /* padding: 0.5rem; */
+    padding-left: auto;
+}
+
+.input-number::-webkit-outer-spin-button,
+.input-number::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+.input-number[type= number]:focus{
+    border: 2px solid #1F2937;
+}
+
+
+.convert-btn{
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+    width: 117px;
+    height: 42px;
+}
+
+.convert-btn:hover{
+    color: white;
+    background-color: rgba(153, 205, 50, 0.843);
+}
+
+/*=== Main Section ===*/
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.75rem;
+    background-color: #1F2937;
+    margin: 2.25rem 0;
+}
+
+.item {
+    width: 500px;
+    padding: 2.5rem  3.5rem;
+    border-top-left-radius: 5px;
+    background-color: #273549;
+}
+
+.main-container h2{
+    color: #CCC1FF;
+    font-weight: 500;
+    margin: 0 0 1rem 0;
+}
+
+.main-container p{
+    margin: 0;
+}
+
+
+/*=== Media Queries ===*/
+
+@media (min-width: 375px){
+
+}
+
+@media (min-width: 415px){
+
+}
+
+@media (min-width: 563px){
+
+}
+
+@media (min-width: 1180px){
+
+}

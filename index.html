@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Unit Converter</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Metric/Imperial Unit Conversion</h1>
+            <label for="input-number-el" class="visually-hidden">Number input</label>
+            <input type="number" value="" class="input-number" id="input-number-el" pattern="[0-9]*"  inputmode="numeric">
+            <button class="convert-btn" id="convert-btn-el">Convert</button>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="item">
+                <h2 class="h2-style">Length (Meter/Feet)</h2>
+                <p id="p-length-el">20 meters = 65.616 feet | 20 feet = 6.096 meters</p>
+            </div>
+            <div class="item">
+                <h2 class="h2-style">Volume (Liters/Gallons)</h2>
+                <p id="p-volume-el">20 liters = 5.284 gallons | 20 gallons = 75.708 liters</p>
+            </div>
+            <div class="item">
+                <h2 class="h2-style">Mass (Kilograms/Pounds)</h2>
+                <p id="p-mass-el">20 kilos = 44.092 pounds | 20 pounds = 9.072 kilos</p>
+            </div>
+        </div>
+    </main>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
