@@ -1,8 +1,25 @@
-// const inputNumberEl = document.getElementById("input-number-el")
-// const btnConvertEl = document.getElementById("convert-btn-el")
-// const pLengthEl = document.getElementById("p-length-el")
-// const pVolumeEl = document.getElementById("p-volume-el")
-// const pMassEl = document.getElementById("p-mass-el")
+const inputNumberEl = document.getElementById("input-number-el")
+const btnConvertEl = document.getElementById("convert-btn-el")
+const pLengthEl = document.getElementById("p-length-el")
+const pVolumeEl = document.getElementById("p-volume-el")
+const pMassEl = document.getElementById("p-mass-el")
+
+btnConvertEl.addEventListener("click", function(){
+    const number = inputNumberEl.value
+
+    const lengthInMeter = convert(number, "meter", "feet").metric
+    const lengthInFeet = convert(number, "meter", "feet").imperial
+
+    const volumeInLiter = convert(number, "liter", "gallon").metric
+    const volumeInGallon = convert(number, "liter", "gallon").imperial
+
+    const massInKg = convert(number, "kilogram", "pound").metric
+    const massInPounds = convert(number, "kilogram", "pound").imperial
+
+    pLengthEl.textContent = `${number} meters = ${lengthInFeet} feet | ${number} feet = ${lengthInMeter} meters`
+    pVolumeEl.textContent = `${number} liters = ${volumeInGallon} gallons | ${number} gallons = ${volumeInLiter} liters`
+    pMassEl.textContent = `${number} kilos = ${massInPounds} pounds | ${number} pounds = ${massInKg} kilos`
+})
 
 function convert(number, metricUnit, imperialUnit){
 
